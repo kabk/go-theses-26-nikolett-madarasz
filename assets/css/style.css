@@ -598,9 +598,10 @@ main h2 {
   }
 
   .landing-text {
-    text-align: left;
-    text-justify: auto;
-    hyphens: manual;
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    hyphens: auto !important;
+    -webkit-hyphens: auto !important;
     word-spacing: normal;
   }
 

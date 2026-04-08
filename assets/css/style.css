@@ -1,15 +1,6 @@
 @charset "UTF-8";
 
 
-
-/* @FONT FACE (enable the use of 'custom fonts' inside your document) */
-
-/* 
-  You can use 'fontsquirrel' (https://www.fontsquirrel.com) 
-  or 'transfonter' (https://transfonter.org)
-  to generate your own font for the web from .ttf or .oft files 
-*/
-
 @font-face {
     font-family: 'Your Font Name';
     src: url('../fonts/yourfontname/yourfontname-roman.woff2');
@@ -111,7 +102,7 @@ header p {
 }
 main h2 {
   text-align: center;
-  margin-top: 2.5rem;   /* extra space above chapter titles if you like */
+  margin-top: 2.5rem;   /* extra space above chapter titles */
   margin-bottom: 1rem;
 }
 
@@ -124,7 +115,7 @@ main h2 {
   letter-spacing: 0.02em;
 }
 
-/* Recreate the large intentional white space before Staging body text */
+/* large intentional space form my essay */
 #Staging + .chapter-number {
   margin-bottom: 16rem;
 }
@@ -198,7 +189,7 @@ body.show-curtain #curtain {
 .curtain-panel {
   position: absolute;
   top: 0;
-  width: 50vw;                 /* start closed: each half‑screen */
+  width: 50vw;                 
   height: 100vh;
   background-image: url("../images/images/csipke.jpg");
   background-size: cover;
@@ -243,7 +234,7 @@ body.show-curtain #curtain {
 }
 
 /* once opened, keep drapes visible but allow page interaction */
-/* Must beat `body.show-curtain #curtain { pointer-events: auto }` or clicks stay blocked */
+
 #curtain.open,
 body.show-curtain #curtain.open {
   pointer-events: none;
@@ -285,7 +276,7 @@ header {
   position: static;
   top: 0;
   z-index: 100;
-  background: #ffffff;      /* or your page background */
+  background: #ffffff;     
   padding: 0.35rem 0 0.5rem;
   text-align: center;
 }
@@ -309,19 +300,19 @@ header {
   max-width: var(--reading-column);
   min-height: 100vh;
   margin: 0 auto;
-  padding: clamp(0.7rem, 2.6vw, 1.4rem) 1.5rem 0.9rem;
+  padding: clamp(1.2rem, 4.5vw, 2.5rem) 1.5rem 1.75rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: stretch;
 }
 
 .landing-text-block {
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
 }
 
 .landing-title {
-  margin: 0 0 0.35rem;
+  margin: 0.05rem 0 0.55rem;
   text-align: center;
   font-family: var(--font-heading), cursive;
   font-style: normal;
@@ -329,7 +320,7 @@ header {
   font-weight: normal;
 }
 
-/* Keep landing title typeface identical to chapter titles */
+
 .page-home .landing-title {
   font-family: var(--font-heading), cursive;
 }
@@ -339,12 +330,11 @@ header {
   hyphens: auto;
   text-justify: inter-word;
   word-spacing: -0.02em;
-  margin: 0 0 0.8rem;
 }
 
 .landing-actions {
-  margin-top: 0.9rem;
-  padding-top: 0.7rem;
+  margin-top: 2.75rem;
+  padding-top: 1.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -370,13 +360,13 @@ header {
   color: inherit;
 }
 
-/* Center title and subtitle */
+
 .site-title,
 .site-subtitle {
   text-align: center;
   margin: 0.25rem 0;
 }
-/* Icon nav — one row, tight gap, no scroll */
+
 .icon-nav {
   margin-top: 0.5rem;
   display: grid;
@@ -407,7 +397,7 @@ header {
   opacity: 0.6;
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
-/* Active / hovered icon */
+
 .icon-nav-item img:hover,
 .icon-nav-item.active img {
   transform: scale(1.1);
